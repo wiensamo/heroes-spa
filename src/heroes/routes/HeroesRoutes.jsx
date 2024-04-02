@@ -6,6 +6,7 @@ import { DcPage, HeroPage, MarvelPage, SearchPage } from '../pages';
 export const HeroesRoutes = () => {
   return (
     <>
+      <div className='container'>
         <Navbar />
         <Routes>
             <Route path="/*" element={<Navigate to={"/marvel"} />} />
@@ -16,6 +17,7 @@ export const HeroesRoutes = () => {
             <Route path="hero" element={<HeroPage />} />
     
         </Routes>
+      </div>
     </>
   )
 }
