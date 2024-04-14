@@ -1,19 +1,21 @@
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
+import './../../styles/pages/loginPage.css';
 
 export const LoginPage = () => {
 
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
   const onLogin =()=>{
+    const lastPath = localStorage.getItem('lastPath')|| '/';
     login('Chiqui')
-    navigate('/', {replace: true});
+    navigate(lastPath, {replace: true});
   }
 
   return (
     <div className='container mt-5'>
-      <h1>Login Page</h1>
+      <h1 className='prueba'>Login Page</h1>
       <hr />
       <button
         className='btn btn-primary'

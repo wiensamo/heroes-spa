@@ -20,7 +20,7 @@ const showError = (q.length>0) && heroes.length===0;
   
   const onSearchSubmit =(event)=>{
     event.preventDefault();
-    //if( searchText.trim().length <=1 ) return;
+    if( searchText.trim().length <1 ) return;
     navigate(`?q=${searchText}`);
   }
   
