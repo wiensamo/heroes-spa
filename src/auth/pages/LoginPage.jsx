@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
-import './../../styles/pages/loginPage.css';
+//import './../../styles/pages/loginPage.css';
 
 export const LoginPage = () => {
 
@@ -21,7 +21,7 @@ export const LoginPage = () => {
         className='btn btn-primary'
         onClick={onLogin}
       >
-        LogIn
+        Login
       </button>
     </div>
   )
